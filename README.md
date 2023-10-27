@@ -1,5 +1,5 @@
 ## Overview
-This project contains the code for "Adapt to Adapt: A tempo-control Framework for Non-stationary Reinforcement Learning"
+This project contains the code for "Tempo Adaptation in Non-stationary Reinforcement Learning"
 The code is separated into two folders. [PTM](./PTM) folder contains algorithm PTM-G and MBPO, [baselines](./baselines) folder contains ProOLS, FTML, ONPG.  
 ## Installation
 > conda env create -f py38_ptm.yml
