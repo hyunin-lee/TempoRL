@@ -1,6 +1,6 @@
 ## Overview
 This project contains the code for "Tempo Adaptation in Non-stationary Reinforcement Learning"
-The code is separated into two folders. [PTM](./PTM) folder contains algorithm PTM-G and MBPO, [baselines](./baselines) folder contains ProOLS, FTML, ONPG.  
+The code is separated into two folders. [PTM](./PTM) folder contains algorithm ProST-G and MBPO, [baselines](./baselines) folder contains ProOLS, FTML, ONPG.  
 ## Installation
 > conda env create -f py38_ptm.yml
 > 
@@ -26,7 +26,7 @@ We have highlight the codes that should be added as comment "######## add the fo
 Train ProOLS, ONPG, FTML (see [execute files](./baselines/Src/exp_swimmer)).
 > python run_NS.py --algo_name OFPG --env_name "Swimmer-v2" --speed 1 --actor_lr 1e-3
 
-Train PTM-G (see [execute files](./PTM/exp_swimmer)).
+Train ProST-G (see [execute files](./PTM/exp_swimmer)).
 > python main_mbpo_new.py --env_name "Swimmer-v2" --exp_folder_name "swimmer" --noisebound_ns 0.01 --num_train_repeat 50 --use_fbpo True --num_epoch 150 --policyevalNupdateIterNum 1 --non_stationary_reward_setting True --speed 1 --nonstationary_type "r_f_change" --nonstationary_function "sin" --rollout_max_length 3 --get_model_prediction_error True --lr 0.0003;
 
 Train MBPO (see [execute files](./PTM/exp_swimmer)).
